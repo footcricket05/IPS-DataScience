@@ -10,7 +10,7 @@
   <li> Customer Segmentation </li>
   <p><a href="https://github.com/footcricket05/IPS-DS-Internship/blob/main/Customer%20Segmentation/Customer%20Segmentation.ipynb">code</a></p>
   
-  <li> Movie Recommendation System </li>
+  <li> Gender and Age Detection Python Project </li>
   <p><a href="https://github.com/footcricket05/IPS-DS-Internship/blob/main/Gender%20and%20Age%20Detection%20Python%20Project/gad.py">code</a></p>
   
   <li> Movie Recommendation System </li>
