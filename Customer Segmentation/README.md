@@ -23,7 +23,6 @@ clusters to group similar spending activity based on their age and annual income
 closest values from the centre of each cluster were taken to update the cluster and
 reshape the plot (just like k-NN). The closest values are based on Euclidean Distance.
 
-This is the code for Customer Segmentation Project made for [EXPOSYS DATA LABS](http://www.exposysdata.com/), Bengaluru.
 
 
 ## Clone Repository
