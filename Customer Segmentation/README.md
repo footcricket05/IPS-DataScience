@@ -1,4 +1,4 @@
-# customer-segmentation-using-k-means
+# Customer-Segmentation-Using-K-Means
 
 ## Overview 
 
