@@ -29,7 +29,7 @@ This is the code for Customer Segmentation Project made for [EXPOSYS DATA LABS](
 ## Clone Repository
 Clone this Repository using,
 
-	git clone https://github.com/mayursrt/customer-segmentation-using-k-means.git
+	git clone https://github.com/footcricket05/IPS-DS-Internship.git
 
 
 ## Usage
