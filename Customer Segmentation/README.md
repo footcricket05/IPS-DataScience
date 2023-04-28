@@ -1,65 +1,33 @@
 # Customer-Segmentation-Using-K-Means
 
-## Overview 
+Customer Segmentation is the process of dividing a customer base into several groups of individuals that share similarities in different ways relevant to marketing such as age, gender, interests, and spending habits. In this data science project, we perform customer segmentation using K-Means clustering.
 
-Customer Segmentation is the process of division of customer base into several
-groups of individuals that share a similarity in different ways that are relevant to
-marketing such as gender, age, interests, and miscellaneous spending habits. In the first
-step of this data science project, we will perform data exploration. We will import the
-essential packages required for this role and then read our data. Finally, we will go
-through the input data to gain necessary insights about it.
+## Objective
+The objective of this project is to segment customers based on their age and annual income into different clusters to identify similar spending patterns.
 
-#### K-Means Clustering:
+## Dataset
+The dataset used in this project is a sample customer dataset containing customer information such as age, annual income, and spending score. The dataset can be downloaded from here.
 
-K-Means algorithm is an iterative algorithm that tries to partition the dataset into K
-pre-defined distinct non-overlapping subgroups (clusters) where each data point belongs
-to only one group. It tries to make the intra-cluster data points as similar as possible
-while also keeping the clusters as different (far) as possible. It assigns data points to a
-cluster such that the sum of the squared distance between the data points and the
-cluster’s centroid is at the minimum. The less variation we have within clusters, the
-more homogeneous the data points are within the same cluster.
-We then proceeded to perform K-means Clustering which will create different
-clusters to group similar spending activity based on their age and annual income. KMeans Clustering selects random values from the data and forms clusters assigned. The
-closest values from the centre of each cluster were taken to update the cluster and
-reshape the plot (just like k-NN). The closest values are based on Euclidean Distance.
+## Approach
+The approach used in this project is K-Means Clustering, which is an iterative algorithm that tries to partition the dataset into K pre-defined distinct non-overlapping subgroups (clusters) where each data point belongs to only one group. It assigns data points to a cluster such that the sum of the squared distance between the data points and the cluster’s centroid is at the minimum. We use the scikit-learn library in Python to perform K-Means clustering.
 
+The steps involved in this project are:
 
+1. Importing the necessary packages and reading the dataset.
 
-## Clone Repository
-Clone this Repository using,
+2. Exploratory data analysis to gain insights about the dataset.
 
-	git clone https://github.com/footcricket05/IPS-DS-Internship.git
+3. Preprocessing the data by scaling it using StandardScaler.
+
+4. Determining the optimal number of clusters using the elbow method.
+
+5. Performing K-Means clustering using the optimal number of clusters obtained in step 4.
+
+6. Visualizing the clusters and analyzing the spending patterns of each cluster.
 
 
-## Usage
-Install `jupyter` from [here](http://jupyter.readthedocs.io/en/latest/install.html) or use
+## Results
+The optimal number of clusters obtained using the elbow method was 5. The K-Means clustering algorithm was applied to the dataset with 5 clusters, and the spending patterns of each cluster were analyzed.
 
-	pip install jupyter
-
-After installing jupyter notebook Just run `jupyter notebook` in terminal and you can visit the notebook in your web browser.
-
-
-## Create Environment
-
-Create an environment using the `requirements.txt` using pip by using following command so you dont have to install dependencies one by one,
-
-
-	pip -r requirements.txt
-
-If you need to use conda to create the environment,
-Read conda docs on managing environments [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
-
-
-## Dependencies
-
-* [Pandas](https://pandas.pydata.org/docs/)
-* [NumPy](https://numpy.org/devdocs/user/index.html)
-* [Matplotlib](https://matplotlib.org/3.3.3/contents.html)
-* [Seaborn](https://seaborn.pydata.org/)
-* [Sklearn](https://scikit-learn.org/stable/)
-
-Install missing dependencies using,
-
-	pip install pandas numpy matplotlib seaborn sklearn
-
-
+## Conclusion
+In conclusion, customer segmentation using K-Means clustering is an effective way to group customers with similar spending patterns. This can be used by businesses to target specific groups of customers with personalized marketing strategies.
