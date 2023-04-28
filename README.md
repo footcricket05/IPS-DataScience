@@ -20,20 +20,6 @@ This repository contains the code for the projects completed during the Data Sci
  </ol>
   
 
-
-## Customer Segmentation
-This project is about segmenting customers based on their purchasing patterns using the K-Means clustering algorithm. The dataset used is the Wholesale customers dataset from the UCI Machine Learning Repository.
-
-
-
-## Gender and Age Detection Python Project
-This project detects gender and age of a person from an image using the OpenCV library in Python.
-
-
-
-## Movie Recommendation System
-This project recommends movies to users based on their ratings of other movies. The dataset used is the MovieLens dataset, and the model was created using Collaborative Filtering.
-
 All projects include the code and necessary datasets used for training and testing. Please refer to the individual project folders for more details.
 
 
