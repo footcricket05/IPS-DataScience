@@ -6,7 +6,9 @@ Customer Segmentation is the process of dividing a customer base into several gr
 The objective of this project is to segment customers based on their age and annual income into different clusters to identify similar spending patterns.
 
 ## Dataset
-The dataset used in this project is a sample customer dataset containing customer information such as age, annual income, and spending score. The dataset can be downloaded from [here.](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python).
+The dataset used in this project is a sample customer dataset containing customer information such as age, annual income, and spending score. 
+
+Link- https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
 
 ## Approach
 The approach used in this project is K-Means Clustering, which is an iterative algorithm that tries to partition the dataset into K pre-defined distinct non-overlapping subgroups (clusters) where each data point belongs to only one group. It assigns data points to a cluster such that the sum of the squared distance between the data points and the cluster’s centroid is at the minimum. We use the scikit-learn library in Python to perform K-Means clustering.
