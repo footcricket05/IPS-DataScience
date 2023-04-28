@@ -4,73 +4,30 @@
 
 ![logo](Snips/Logo.jpeg)
 
-## Business Objectives :
+## Objective
+The objective of this project is to develop a fraud detection system for credit card transactions. Credit card fraud is a significant problem that costs billions of dollars to financial institutions each year. This project aims to help financial institutions prevent fraud by identifying fraudulent transactions in real-time and preventing them from going through.
 
-All entertainment websites or online stores have millions/billions of items. It becomes challenging for the customer to select the right one. At this place, recommender systems come into the picture and help the user to find the right item by minimizing the options.
+## Dataset
+The dataset used for this project is the Credit Card Fraud Detection dataset, which is available on Kaggle. The dataset contains credit card transactions made by European cardholders. The dataset contains 284,807 transactions, out of which only 492 are fraudulent. The dataset is highly imbalanced, with fraudulent transactions accounting for only 0.172% of the total transactions.
 
-Recommendation Systems in the world of machine learning have become very popular and are a huge advantage to tech giants like Netflix, Amazon and many more to target their content to a specific audience. These recommendation engines are so strong in their predictions that they can dynamically alter the state of what the user sees on their page based on the user’s interaction with the app.
+Link: https://www.kaggle.com/mlg-ulb/creditcardfraud
 
-The business objective for us is: 
-1. To create a Collaborative Filtering based Movie Recommendation System
-2. Predict the rating that a user would give to a movie that he has not yet rated
-3. Minimize the difference between predicted and actual rating (RMSE and MAPE)
+The dataset contains the following features:
 
-## Data Collection :
+1. Time: Number of seconds elapsed between this transaction and the first transaction in the dataset
 
-The dataset has been obtained from Grouplens.
+2. V1-V28: Principal components obtained through PCA transformation to anonymize the features in the dataset
 
-Link : https://grouplens.org/datasets/movielens/20m/
+3. Amount: Transaction amount
 
-This dataset (ml-20m) describes 5-star rating and free-text tagging activity from MovieLens, a movie recommendation service. It contains 20000263 ratings and 465564 tag applications across 27278 movies. These data were created by 138493 users between January 09, 1995 and March 31, 2015. This dataset was generated on October 17, 2016.
+4. Class: 1 if the transaction is fraudulent, 0 otherwise
 
-Users were selected at random for inclusion. All selected users had rated at least 20 movies. No demographic information is included. Each user is represented by an id, and no other information is provided.
 
-The data are contained in the files genome-scores.csv, genome-tags.csv, links.csv, movies.csv, ratings.csv and tags.csv. 
+## Approach:
+We will be using machine learning algorithms to build a classification model that can predict whether a transaction is fraudulent or not. We will preprocess the data by scaling the features, dealing with missing values and outliers, and performing feature selection. Then, we will train several machine learning models and evaluate their performance using metrics such as precision, recall, F1 score, and ROC-AUC score. We will also explore techniques such as oversampling and undersampling to address the imbalanced nature of the dataset.
 
-For our objective, we would be using "ratings.csv" and "movies.csv" data files.
+## Results:
+The final model will be evaluated on a test set and compared to baseline models. The performance of the model will be measured using various metrics such as accuracy, precision, recall, F1 score, and ROC-AUC score. The results will be presented to stakeholders, and the model will be deployed to production if it meets the performance requirements.
 
-## Modelling :
-
-The following modelling approach was used in the project:
-
-1. Loading & exploring the Movie and User ratings data
-2. Creating User-Item Matrix, User-User and Item-Item similarity matrices for Movie Recommendations
-3. Creating feature and applying ML models to predict the ratings for unseen movies for a user
-
-The detailed analysis and model creation can be found in the .ipynb file. 
-
-## Result :
-
-Some of the test images are given below.
-
-The results from Movie-Movie Similarity is as below:
-
-![test](Snips/M_1.JPG)
-
-The results from User-User Similarity is as below:
-
-![test](Snips/M_2.JPG)
-
-The Feature Importance for predicting ratings is as below:
-
-![test](Snips/M_3.JPG)
-
-The results from different ML models are as follows:
-
-![test](Snips/M_4.JPG)
-
-The sample movie recommendation based on Collaborative Filtering is as follows:
-
-![test](Snips/M_5.JPG)
-
-## Conclusions :
-
-In this project, we learned the importance of Recommendation Systems, the types of recommender systems being implemented, and how to use matrix factorization to enhance a system. 
-
-We then built a movie recommendation system that considers user-user similarity, movie-movie similarity, global averages and matrix factorization. These concepts can be applied to any other user-item interactions systems.
-
-We tried generating recommendations based on similarity matrix and Collaborative Filtering techniques.
-
-We tried to predict the ratings for movies that the user might give based on its past rating behaviours and measure the accuracy using RMSE and MAPE error metrics.
-
-Surely, there is huge scope of improvement and tring out different techniques and ML/DL algorithms.
+## Conclusion:
+By developing a fraud detection system, financial institutions can save millions of dollars in losses due to fraudulent transactions. The model can help detect fraudulent transactions in real-time and prevent them from going through, thus reducing the impact of fraud on customers and the financial institution. The use of machine learning algorithms and data-driven techniques can help improve the accuracy of the model and reduce false positives and false negatives.
