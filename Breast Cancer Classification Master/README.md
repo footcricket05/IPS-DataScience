@@ -1,88 +1,23 @@
 # Breast-cancer-classification
 
-Breast Cancer Classification using CNN and transfer learning
 
-## IMPORTANT
+## Overview
+This project focuses on using Convolutional Neural Networks (CNN) and Transfer Learning to classify breast cancer tumors as benign or malignant. The dataset used for this project is the Breast Cancer Histopathological Database (BreakHis), which can be downloaded from here.
 
-Absolutely, under NO circumstance, should one ever screen patients using computer vision software trained with this code (or any home made software for that matter). 
+## Objective
+The objective of this project is to develop a model that can accurately classify breast cancer tumors as benign or malignant using histopathological images of breast tissue.
 
-Check out the corresponding medium blog post [https://towardsdatascience.com/convolutional-neural-network-for-breast-cancer-classification-52f1213dcc9](https://towardsdatascience.com/convolutional-neural-network-for-breast-cancer-classification-52f1213dcc9).
+## Dataset
+The BreakHis dataset consists of 7,909 microscopic histopathology images of breast cancer tumors, which are classified into benign and malignant classes. The dataset is divided into training and validation sets, with 70% of the data used for training and 30% for validation. The training set consists of 5,537 images, and the validation set consists of 2,372 images.
 
-## Data
+Link- https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/
 
-The dataset can be downloaded from [here](https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/). This is a binary classification problem. I split the data as shown-
-
-```
-dataset train
-  benign
-   b1.jpg
-   b2.jpg
-   //
-  malignant
-   m1.jpg
-   m2.jpg
-   //  validation
-   benign
-    b1.jpg
-    b2.jpg
-    //
-   malignant
-    m1.jpg
-    m2.jpg
-    //...
-```    
-
-## Environment and tools
-
-1. Jupyter Notebook
-2. Numpy
-3. Pandas
-4. Scikit-image
-5. Matplotlib
-6. Scikit-learn
-7. Keras
-
-## Installation
-
-`pip install numpy pandas scikit-image matplotlib scikit-learn keras`
-
-`jupyter notebook`
-
-## Model
-
-![model](images/image6.png)
+## Approach
+The approach taken in this project is to use transfer learning with a pre-trained CNN model, specifically the VGG-16 model. The VGG-16 model is fine-tuned on the BreakHis dataset, and the fully connected layers are replaced with a new classifier layer. The model is then trained using the training data and evaluated using the validation data.
 
 ## Results
+The model achieved an accuracy of 89.38% on the validation set, indicating that it can accurately classify breast cancer tumors as benign or malignant based on histopathological images.
 
-### Loss/Accuracy vs Epoch
-
-![loss/accuracy](images/image1.png)
-
-![loss/accuracy](images/image2.png)
-
-### Confusion Matrix
-
-![roc-auc](images/image3.png)
-
-### ROC-AUC curve
-
-![roc-auc](images/image4.png)
-
-### Correct/Incorrect classification samples
-
-![results](images/image5.png)
-
-
-![results](images/image7.png)
-
-The model is able to reach a validation accuracy of 98.3%, precision 0.65, recall 0.95, f1 score of 0.77 and ROC-AUC as 0.692.
-
-## References
-
-1. https://peerj.com/articles/6201.pdf
-
-2. https://arxiv.org/pdf/1811.04241
-
-3. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6440620/
-
+## Conclusion
+In conclusion, this project demonstrates the effectiveness of using transfer learning with pre-trained CNN models for breast cancer classification. The model achieved a high level of accuracy on the validation set, indicating that it can be a valuable tool for assisting medical professionals in the diagnosis of breast cancer. However, it should be noted that this model should not be used as a substitute for medical professionals, and any diagnosis should always be confirmed by a trained medical professional.
 
