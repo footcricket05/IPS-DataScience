@@ -1,7 +1,8 @@
-<h1 align=center>InfoPillar Solutions Internship</h1>
-
+# InfoPillar Solutions Internship
 
 <h2> Data Science Internship Projects </h2>
+
+This repository contains the code for the projects completed during the Data Science Internship at InfoPillar Solutions. The projects are:
 
 <ol>
   <li> Breast Cancer Classification Master </li>
@@ -18,20 +19,6 @@
   
  </ol>
   
-  
-This repository contains the code for the projects completed during the Data Science Internship at InfoPillar Solutions. The projects are:
-
-1. Breast Cancer Classification Master
-
-2. Customer Segmentation
-
-3. Gender and Age Detection Python Project
-
-4. Movie Recommendation System
-
-5. Breast Cancer Classification Master
-
-This project aims to classify breast cancer as malignant or benign based on various features. The dataset used is the Breast Cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning Repository. The model achieved an accuracy of 97.18%.
 
 
 ## Customer Segmentation
@@ -52,7 +39,7 @@ All projects include the code and necessary datasets used for training and testi
 
 
 ## Installation
-1. To run any of the projects, clone the repository and install the necessary libraries using pip:
+To run any of the projects, clone the repository and install the necessary libraries using pip:
 ```
 pip install -r requirements.txt
 ```
